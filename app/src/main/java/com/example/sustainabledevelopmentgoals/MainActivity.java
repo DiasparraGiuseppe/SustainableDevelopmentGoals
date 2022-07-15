@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Button quiz, goals;
         quiz=findViewById(R.id.quizBtn);
         goals=findViewById(R.id.goalsBtn);
+
+        Window window= this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.black));
 
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
