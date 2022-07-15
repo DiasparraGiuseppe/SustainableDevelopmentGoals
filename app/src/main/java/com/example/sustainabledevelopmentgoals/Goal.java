@@ -35,7 +35,7 @@ public class Goal extends AppCompatActivity {
 
         switch (caller){
             case "c1": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c1));
+                img_goal.setImageDrawable(getDrawable(R.drawable.c1grande));
                 nome_goal.setText("Fine della povertà");
                 descr_goal.setText("Descrizione goal 1");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal1));
