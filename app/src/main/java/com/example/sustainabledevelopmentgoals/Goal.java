@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +24,7 @@ public class Goal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goal2);
 
-        LinearLayout layout = findViewById(R.id.layoutGoal2);
+        ScrollView layout = findViewById(R.id.layoutGoal2);
 
         ImageView img_goal= (ImageView) findViewById(R.id.img_goal2);
       //  TextView nome_goal= (TextView) findViewById(R.id.nome_goal);
