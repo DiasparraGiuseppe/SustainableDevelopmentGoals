@@ -35,11 +35,13 @@ public class Goal extends AppCompatActivity {
 
         switch (caller){
             case "c1": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c1));
+                img_goal.setImageDrawable(getDrawable(R.drawable.provacanva));
                 nome_goal.setText("Fine della povertà");
                 descr_goal.setText("Descrizione goal 1");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal1));
                 window.setStatusBarColor(getResources().getColor(R.color.goal1));
+                nome_goal.setText("Porre fine ad ogni forma di povertà");
+                descr_goal.setText("Aumentare i redditi dei più poveri, garantire l'accesso ai servizi di base e proteggere tutti dai disastri naturali e causati dall'uomo");
                 break;
             }
             case "c2": {
