@@ -12,10 +12,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class Goal extends AppCompatActivity {
     @Override
@@ -29,6 +34,8 @@ public class Goal extends AppCompatActivity {
         ImageView img_goal= (ImageView) findViewById(R.id.img_goal2);
       //  TextView nome_goal= (TextView) findViewById(R.id.nome_goal);
         TextView descr_goal=findViewById(R.id.descr_goal2);
+        YouTubePlayerView youTubePlayerView= findViewById(R.id.video);
+        getLifecycle().addObserver(youTubePlayerView);
 
         Intent intent = getIntent();
         String caller= intent.getStringExtra("caller");
@@ -37,13 +44,19 @@ public class Goal extends AppCompatActivity {
 
         switch (caller){
             case "c1": {
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="6h6MU0eg8yw";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
                 img_goal.setImageDrawable(getDrawable(R.drawable.goal1nuovo));
-               // nome_goal.setText("Fine della povertà");
                 descr_goal.setText("Descrizione goal 1");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal1));
                 window.setStatusBarColor(getResources().getColor(R.color.goal1));
-              //  nome_goal.setText("Porre fine ad ogni forma di povertà");
                 descr_goal.setText("Aumentare i redditi dei più poveri, garantire l'accesso ai servizi di base e proteggere tutti dai disastri naturali e causati dall'uomo");
+
                 break;
             }
             case "c2": {
@@ -178,6 +191,8 @@ public class Goal extends AppCompatActivity {
                 break;
             }
         }
+
+
 
     }
 }
