@@ -32,7 +32,6 @@ public class Goal extends AppCompatActivity {
         ScrollView layout = findViewById(R.id.layoutGoal2);
 
         ImageView img_goal= (ImageView) findViewById(R.id.img_goal2);
-      //  TextView nome_goal= (TextView) findViewById(R.id.nome_goal);
         TextView descr_goal=findViewById(R.id.descr_goal2);
         YouTubePlayerView youTubePlayerView= findViewById(R.id.video);
         getLifecycle().addObserver(youTubePlayerView);
@@ -51,8 +50,7 @@ public class Goal extends AppCompatActivity {
                         youTubePlayer.loadVideo(id,0);
                     }
                 });
-                img_goal.setImageDrawable(getDrawable(R.drawable.goal1nuovo));
-                descr_goal.setText("Descrizione goal 1");
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal1));
                 layout.setBackgroundColor(getResources().getColor(R.color.goal1));
                 window.setStatusBarColor(getResources().getColor(R.color.goal1));
                 descr_goal.setText("Aumentare i redditi dei più poveri, garantire l'accesso ai servizi di base e proteggere tutti dai disastri naturali e causati dall'uomo");
@@ -60,132 +58,228 @@ public class Goal extends AppCompatActivity {
                 break;
             }
             case "c2": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c2));
-             //   nome_goal.setText("Stop alla fame");
-                descr_goal.setText("Descrizione goal 2");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="ldaFVRQHjv0";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal2));
+                descr_goal.setText("Porre fine alla fame, raggiungere la sicurezza alimentare, migliorare la nutrizione e promuovere un’agricoltura sostenibile");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal2));
                 window.setStatusBarColor(getResources().getColor(R.color.goal2));
                 break;
             }
             case "c3": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c3));
-             //   nome_goal.setText("Benessere e buona salute");
-                descr_goal.setText("Descrizione goal 3");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="7GywgfYPLQE";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal3));
+                descr_goal.setText("Assicurare la salute e il benessere per tutti a tutte le età");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal3));
                 window.setStatusBarColor(getResources().getColor(R.color.goal3));
                 break;
 
             }
             case "c4": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c4));
-              //  nome_goal.setText("Educazione di qualità");
-                descr_goal.setText("Descrizione goal 4");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="eX5nieFez3o";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal4));
+                descr_goal.setText("Fornire un’istruzione di qualità, equa e inclusiva, e opportunità di apprendimento per tutti");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal4));
                 window.setStatusBarColor(getResources().getColor(R.color.goal4));
                 break;
 
             }
             case "c5": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c5));
-              //  nome_goal.setText("Fine della povertà");
-                descr_goal.setText("Descrizione goal 1");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="khOUggPqFcU";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal5));
+                descr_goal.setText("Raggiungere l’uguaglianza di genere e l’empowerment di tutte le donne e le ragazze");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal5));
                 window.setStatusBarColor(getResources().getColor(R.color.goal5));
                 break;
             }
             case "c6": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c6));
-               // nome_goal.setText("Stop alla fame");
-                descr_goal.setText("Descrizione goal 2");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="5qUuGgn07Xg";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal6));
+                descr_goal.setText("Garantire a tutti la disponibilità e la gestione sostenibile dell’acqua e delle strutture igienico-sanitarie");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal6));
                 window.setStatusBarColor(getResources().getColor(R.color.goal6));
                 break;
             }
             case "c7": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c7));
-             //   nome_goal.setText("Benessere e buona salute");
-                descr_goal.setText("Descrizione goal 3");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="ICokSnMxn3Q";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal7));
+                descr_goal.setText("Assicurare a tutti l’accesso a sistemi di energia economici, affidabili,sostenibili e moderni");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal7));
                 window.setStatusBarColor(getResources().getColor(R.color.goal7));
                 break;
             }
             case "c8": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c8));
-              //  nome_goal.setText("Educazione di qualità");
-                descr_goal.setText("Descrizione goal 4");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="XF-Ko5xNvfw";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal8));
+                descr_goal.setText("Incentivare una crescita economica duratura, inclusiva e sostenibile,un’occupazione piena e produttiva e un lavoro dignitoso per tutti");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal8));
                 window.setStatusBarColor(getResources().getColor(R.color.goal8));
                 break;
             }
             case "c9": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c9));
-             //   nome_goal.setText("Fine della povertà");
-                descr_goal.setText("Descrizione goal 1");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="Vpa7CE8QCiA";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal9));
+                descr_goal.setText("Costruire infrastrutture resilienti e promuovere l’innovazione e una industrializzazione equa, responsabile e sostenibile");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal9));
                 window.setStatusBarColor(getResources().getColor(R.color.goal9));
                 break;
             }
             case "c10": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c10));
-              //  nome_goal.setText("Stop alla fame");
-                descr_goal.setText("Descrizione goal 2");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="6aAJl8RhHew";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal10));
+                descr_goal.setText("Ridurre le diseguaglianze all’interno e fra le nazioni");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal10));
                 window.setStatusBarColor(getResources().getColor(R.color.goal10));
                 break;
 
             }
             case "c11": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c11));
-             //   nome_goal.setText("Benessere e buona salute");
-                descr_goal.setText("Descrizione goal 3");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="jTwmXoePSxs";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal11));
+                descr_goal.setText("Rendere le città e gli insediamenti umani inclusivi, sicuri, duraturi,sostenibili");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal11));
                 window.setStatusBarColor(getResources().getColor(R.color.goal11));
                 break;
             }
             case "c12": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c12));
-             //   nome_goal.setText("Educazione di qualità");
-                descr_goal.setText("Descrizione goal 4");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="9_sD-JqsJys";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal12));
+                descr_goal.setText("Garantire modelli sostenibili di produzione e di consumo");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal12));
                 window.setStatusBarColor(getResources().getColor(R.color.goal12));
                 break;
             }
             case "c13": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c13));
-           //     nome_goal.setText("Fine della povertà");
-                descr_goal.setText("Descrizione goal 1");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="LxSG5_xp_ho";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal13));
+                descr_goal.setText("Adottare misure urgenti per combattere il cambiamento climatico e le sue conseguenze");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal13));
                 window.setStatusBarColor(getResources().getColor(R.color.goal13));
                 break;
             }
             case "c14": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c14));
-             //   nome_goal.setText("Stop alla fame");
-                descr_goal.setText("Descrizione goal 2");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="K2t7qjIzoNc";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal14));
+                descr_goal.setText("Conservare e utilizzare in modo durevole gli oceani, i mari e le risorse marine per lo sviluppo sostenibile");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal14));
                 window.setStatusBarColor(getResources().getColor(R.color.goal14));
                 break;
             }
             case "c15": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c15));
-               // nome_goal.setText("Benessere e buona salute");
-                descr_goal.setText("Descrizione goal 3");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="vDDFM02x3Fk";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal15));
+                descr_goal.setText("Proteggere, ripristinare, favorire un uso sostenibile dell’ecosistema terrestre, gestire sostenibilmente le foreste, contrastare la desertificazione, arrestare e far retrocedere il degrado del territorio e fermare la perdita di diversità biologica");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal15));
                 window.setStatusBarColor(getResources().getColor(R.color.goal15));
                 break;
             }
             case "c16": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c16));
-              //  nome_goal.setText("Educazione di qualità");
-                descr_goal.setText("Descrizione goal 16");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="1clrr10vXw8";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal16));
+                descr_goal.setText("Promuovere società pacifiche e più inclusive per uno sviluppo sostenibile, offrire l’accesso alla giustizia per tutti e creare organismi efficienti, responsabili e inclusivi a tutti i livelli");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal16));
                 window.setStatusBarColor(getResources().getColor(R.color.goal16));
                 break;
             }
             case "c17": {
-                img_goal.setImageDrawable(getDrawable(R.drawable.c17));
-            //    nome_goal.setText("Educazione di qualità");
-                descr_goal.setText("Descrizione goal 17");
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(YouTubePlayer youTubePlayer) {
+                        String id="XE7VaXHY1Fs";
+                        youTubePlayer.loadVideo(id,0);
+                    }
+                });
+                img_goal.setImageDrawable(getDrawable(R.drawable.goal17));
+                descr_goal.setText("Rafforzare il partenariato mondiale e i mezzi di attuazione per lo sviluppo sostenibile");
                 layout.setBackgroundColor(getResources().getColor(R.color.goal17));
                 window.setStatusBarColor(getResources().getColor(R.color.goal17));
                 break;

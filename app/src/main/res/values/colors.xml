@@ -9,20 +9,20 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="goal1">#E5243B</color>
-    <color name="goal2">#D3A029</color>
-    <color name="goal3">#279B48</color>
-    <color name="goal4">#C31F33</color>
-    <color name="goal5">#EF402B</color>
-    <color name="goal6">#00AED9</color>
-    <color name="goal7">#FDB713</color>
-    <color name="goal8">#8F1838</color>
-    <color name="goal9">#F36D25</color>
-    <color name="goal10">#E11484</color>
-    <color name="goal11">#F99D26</color>
-    <color name="goal12">#CF8D2A</color>
-    <color name="goal13">#48773E</color>
-    <color name="goal14">#007DBC</color>
-    <color name="goal15">#3EB049</color>
-    <color name="goal16">#02558B</color>
-    <color name="goal17">#183668</color>
+    <color name="goal2">#DDA63A</color>
+    <color name="goal3">#4C9F38</color>
+    <color name="goal4">#C5192D</color>
+    <color name="goal5">#FF3A21</color>
+    <color name="goal6">#26BDE2</color>
+    <color name="goal7">#FCC30B</color>
+    <color name="goal8">#A21942</color>
+    <color name="goal9">#FD6925</color>
+    <color name="goal10">#DD1367</color>
+    <color name="goal11">#FD9D24</color>
+    <color name="goal12">#BF8B2E</color>
+    <color name="goal13">#3F7E44</color>
+    <color name="goal14">#0A97D9</color>
+    <color name="goal15">#56C02B</color>
+    <color name="goal16">#00689D</color>
+    <color name="goal17">#19486A</color>
 </resources>
