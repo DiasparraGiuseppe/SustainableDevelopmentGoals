@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/drawable/custom_btn.xml" value="0.15185185185185185" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/drawable/custom_btn2.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/drawable/round_back_light_yellow10.xml" value="0.1" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/drawable/round_back_white_stroke.xml" value="0.1" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/layout/activity_goal.xml" value="0.4" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/layout/activity_goal2.xml" value="0.1" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/layout/activity_home.xml" value="0.259375" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/layout/activity_quiz.xml" value="0.259375" />
         <entry key="..\:/Users/giuse/AndroidStudioProjects/SustainableDevelopmentGoals/app/src/main/res/layout/activity_splash_screen.xml" value="0.259375" />
       </map>
     </option>

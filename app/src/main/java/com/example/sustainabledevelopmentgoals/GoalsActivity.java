@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Home extends AppCompatActivity {
+public class GoalsActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +39,7 @@ public class Home extends AppCompatActivity {
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c1");
                 startActivity(intent);
             }
@@ -47,7 +47,7 @@ public class Home extends AppCompatActivity {
         c2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c2");
                 startActivity(intent);
             }
@@ -55,7 +55,7 @@ public class Home extends AppCompatActivity {
         c3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c3");
                 startActivity(intent);
             }
@@ -64,7 +64,7 @@ public class Home extends AppCompatActivity {
         c4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c4");
                 startActivity(intent);
             }
@@ -72,7 +72,7 @@ public class Home extends AppCompatActivity {
         c5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c5");
                 startActivity(intent);
             }
@@ -80,7 +80,7 @@ public class Home extends AppCompatActivity {
         c6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c6");
                 startActivity(intent);
             }
@@ -88,7 +88,7 @@ public class Home extends AppCompatActivity {
         c7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c7");
                 startActivity(intent);
             }
@@ -97,7 +97,7 @@ public class Home extends AppCompatActivity {
         c8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c8");
                 startActivity(intent);
             }
@@ -105,7 +105,7 @@ public class Home extends AppCompatActivity {
         c9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c9");
                 startActivity(intent);
             }
@@ -113,7 +113,7 @@ public class Home extends AppCompatActivity {
         c10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c10");
                 startActivity(intent);
             }
@@ -121,7 +121,7 @@ public class Home extends AppCompatActivity {
         c11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c11");
                 startActivity(intent);
             }
@@ -130,7 +130,7 @@ public class Home extends AppCompatActivity {
         c12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c12");
                 startActivity(intent);
             }
@@ -138,7 +138,7 @@ public class Home extends AppCompatActivity {
         c13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c13");
                 startActivity(intent);
             }
@@ -146,7 +146,7 @@ public class Home extends AppCompatActivity {
         c14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c14");
                 startActivity(intent);
             }
@@ -154,7 +154,7 @@ public class Home extends AppCompatActivity {
         c15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c15");
                 startActivity(intent);
             }
@@ -163,7 +163,7 @@ public class Home extends AppCompatActivity {
         c16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c16");
                 startActivity(intent);
             }
@@ -171,7 +171,7 @@ public class Home extends AppCompatActivity {
         c17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Home.this,Goal.class);
+                Intent intent=new Intent(GoalsActivity.this,Goal.class);
                 intent.putExtra("caller","c17");
                 startActivity(intent);
             }
