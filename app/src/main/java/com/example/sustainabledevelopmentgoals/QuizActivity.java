@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,9 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        Window window= this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.barra));
 
         final ImageView backBtn=findViewById(R.id.backBtn);
         final TextView timer=findViewById(R.id.timer);

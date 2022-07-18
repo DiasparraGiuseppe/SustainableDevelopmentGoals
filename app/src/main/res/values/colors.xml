@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="barra">#1F6888</color>
 
     <color name="goal1">#E5243B</color>
     <color name="goal2">#DDA63A</color>

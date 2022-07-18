@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         goals=findViewById(R.id.goalsBtn);
 
         Window window= this.getWindow();
-        window.setStatusBarColor(this.getResources().getColor(R.color.black));
+        window.setStatusBarColor(this.getResources().getColor(R.color.barra));
 
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
