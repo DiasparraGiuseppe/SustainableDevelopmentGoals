@@ -15,7 +15,7 @@ public class GoalsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Window window= this.getWindow();
-        window.setStatusBarColor(this.getResources().getColor(R.color.black));
+        window.setStatusBarColor(this.getResources().getColor(R.color.barra));
 
         ImageView c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17;
         c1=findViewById(R.id.c1);
@@ -40,7 +40,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c1");
+                intent.putExtra("caller","1");
                 startActivity(intent);
             }
         });
@@ -48,7 +48,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c2");
+                intent.putExtra("caller","2");
                 startActivity(intent);
             }
         });
@@ -56,7 +56,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c3");
+                intent.putExtra("caller","3");
                 startActivity(intent);
             }
 
@@ -65,7 +65,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c4");
+                intent.putExtra("caller","4");
                 startActivity(intent);
             }
         });
@@ -73,7 +73,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c5");
+                intent.putExtra("caller","5");
                 startActivity(intent);
             }
         });
@@ -81,7 +81,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c6");
+                intent.putExtra("caller","6");
                 startActivity(intent);
             }
         });
@@ -89,7 +89,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c7");
+                intent.putExtra("caller","7");
                 startActivity(intent);
             }
 
@@ -98,7 +98,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c8");
+                intent.putExtra("caller","8");
                 startActivity(intent);
             }
         });
@@ -106,7 +106,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c9");
+                intent.putExtra("caller","9");
                 startActivity(intent);
             }
         });
@@ -114,7 +114,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c10");
+                intent.putExtra("caller","10");
                 startActivity(intent);
             }
         });
@@ -122,7 +122,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c11");
+                intent.putExtra("caller","11");
                 startActivity(intent);
             }
 
@@ -131,7 +131,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c12");
+                intent.putExtra("caller","12");
                 startActivity(intent);
             }
         });
@@ -139,7 +139,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c13");
+                intent.putExtra("caller","13");
                 startActivity(intent);
             }
         });
@@ -147,7 +147,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c14");
+                intent.putExtra("caller","14");
                 startActivity(intent);
             }
         });
@@ -155,7 +155,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c15");
+                intent.putExtra("caller","15");
                 startActivity(intent);
             }
 
@@ -164,7 +164,7 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c16");
+                intent.putExtra("caller","16");
                 startActivity(intent);
             }
         });
@@ -172,10 +172,9 @@ public class GoalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(GoalsActivity.this,Goal.class);
-                intent.putExtra("caller","c17");
+                intent.putExtra("caller","17");
                 startActivity(intent);
             }
         });
-
     }
 }

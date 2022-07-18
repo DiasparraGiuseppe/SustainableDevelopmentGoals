@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
@@ -23,6 +25,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Abs
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class Goal extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
@@ -42,7 +45,7 @@ public class Goal extends AppCompatActivity {
         Window window=this.getWindow();
 
         switch (caller){
-            case "c1": {
+            case "1": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -57,7 +60,7 @@ public class Goal extends AppCompatActivity {
 
                 break;
             }
-            case "c2": {
+            case "2": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -71,7 +74,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal2));
                 break;
             }
-            case "c3": {
+            case "3": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -86,7 +89,7 @@ public class Goal extends AppCompatActivity {
                 break;
 
             }
-            case "c4": {
+            case "4": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -101,7 +104,7 @@ public class Goal extends AppCompatActivity {
                 break;
 
             }
-            case "c5": {
+            case "5": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -115,7 +118,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal5));
                 break;
             }
-            case "c6": {
+            case "6": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -129,7 +132,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal6));
                 break;
             }
-            case "c7": {
+            case "7": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -143,7 +146,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal7));
                 break;
             }
-            case "c8": {
+            case "8": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -157,7 +160,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal8));
                 break;
             }
-            case "c9": {
+            case "9": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -171,7 +174,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal9));
                 break;
             }
-            case "c10": {
+            case "10": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -186,7 +189,7 @@ public class Goal extends AppCompatActivity {
                 break;
 
             }
-            case "c11": {
+            case "11": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -200,7 +203,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal11));
                 break;
             }
-            case "c12": {
+            case "12": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -214,7 +217,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal12));
                 break;
             }
-            case "c13": {
+            case "13": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -228,7 +231,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal13));
                 break;
             }
-            case "c14": {
+            case "14": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -242,7 +245,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal14));
                 break;
             }
-            case "c15": {
+            case "15": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -256,7 +259,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal15));
                 break;
             }
-            case "c16": {
+            case "16": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -270,7 +273,7 @@ public class Goal extends AppCompatActivity {
                 window.setStatusBarColor(getResources().getColor(R.color.goal16));
                 break;
             }
-            case "c17": {
+            case "17": {
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
                     @Override
                     public void onReady(YouTubePlayer youTubePlayer) {
@@ -285,8 +288,5 @@ public class Goal extends AppCompatActivity {
                 break;
             }
         }
-
-
-
     }
 }

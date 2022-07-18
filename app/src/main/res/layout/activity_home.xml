@@ -11,6 +11,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/homeimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/home"
+            android:adjustViewBounds="true"/>
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
