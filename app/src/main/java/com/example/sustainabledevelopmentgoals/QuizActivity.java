@@ -21,7 +21,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private TextView questions;
     private TextView question;
-    private AppCompatButton option1, option2, option3, option4;
+    private AppCompatButton option1, option2, option3;
     private AppCompatButton nextBtn;
     private Timer quizTimer;
     private int totalTimeInMins=1;
@@ -44,7 +44,6 @@ public class QuizActivity extends AppCompatActivity {
         option1=findViewById(R.id.option1);
         option2=findViewById(R.id.option2);
         option3=findViewById(R.id.option3);
-        option4=findViewById(R.id.option4);
 
         nextBtn=findViewById(R.id.nextBtn);
 
@@ -54,7 +53,6 @@ public class QuizActivity extends AppCompatActivity {
         option1.setText(questionsList.get(0).getOption1());
         option2.setText(questionsList.get(0).getOption2());
         option3.setText(questionsList.get(0).getOption3());
-        option4.setText(questionsList.get(0).getOption4());
         startTimer(timer);
 
         backBtn.setOnClickListener(new View.OnClickListener() {
@@ -115,21 +113,6 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        option4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if(selectedOptionByUser.isEmpty()){
-                    selectedOptionByUser=option4.getText().toString();
-
-                    option4.setBackgroundResource(R.drawable.round_back_red10);
-                    option4.setTextColor(Color.WHITE);
-
-                    revealAnswer();
-                    questionsList.get(currentQuestionPosition).setUserSelectedAnswer(selectedOptionByUser);
-                }
-            }
-        });
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,15 +142,13 @@ public class QuizActivity extends AppCompatActivity {
             option2.setTextColor(Color.parseColor("#1F6BB8"));
             option3.setBackgroundResource(R.drawable.round_back_white_stroke);
             option3.setTextColor(Color.parseColor("#1F6BB8"));
-            option4.setBackgroundResource(R.drawable.round_back_white_stroke);
-            option4.setTextColor(Color.parseColor("#1F6BB8"));
 
             questions.setText((currentQuestionPosition+1)+"/"+questionsList.size());
             question.setText(questionsList.get(currentQuestionPosition).getQuestion());
             option1.setText(questionsList.get(currentQuestionPosition).getOption1());
             option2.setText(questionsList.get(currentQuestionPosition).getOption2());
             option3.setText(questionsList.get(currentQuestionPosition).getOption3());
-            option4.setText(questionsList.get(currentQuestionPosition).getOption4());
+
         }
         else{
             Intent intent=new Intent(QuizActivity.this,QuizResult.class);
@@ -244,12 +225,9 @@ public class QuizActivity extends AppCompatActivity {
         }else if(option2.getText().toString().equals(getAnswer)){
             option2.setBackgroundResource(R.drawable.round_back_green10);
             option2.setTextColor(Color.WHITE);
-        }else if(option3.getText().toString().equals(getAnswer)){
+        }else if(option3.getText().toString().equals(getAnswer)) {
             option3.setBackgroundResource(R.drawable.round_back_green10);
             option3.setTextColor(Color.WHITE);
-        }else if(option4.getText().toString().equals(getAnswer)){
-            option4.setBackgroundResource(R.drawable.round_back_green10);
-            option4.setTextColor(Color.WHITE);
         }
     }
 }

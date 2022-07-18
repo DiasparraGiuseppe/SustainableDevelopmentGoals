@@ -1,15 +1,14 @@
 package com.example.sustainabledevelopmentgoals;
 
 public class QuestionsList {
-    private String question, option1, option2, option3, option4,answer;
+    private String question, option1, option2, option3,answer;
     private String userSelectedAnswer;
 
-    public QuestionsList(String question, String option1, String option2, String option3, String option4,String answer, String userSelectedAnswer) {
+    public QuestionsList(String question, String option1, String option2, String option3,String answer, String userSelectedAnswer) {
         this.question = question;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
-        this.option4 = option4;
         this.answer = answer;
         this.userSelectedAnswer = userSelectedAnswer;
     }
@@ -28,10 +27,6 @@ public class QuestionsList {
 
     public String getOption3() {
         return option3;
-    }
-
-    public String getOption4() {
-        return option4;
     }
 
     public String getAnswer() {
